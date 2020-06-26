@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/json-path-4.1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/json-path-4.1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/rest-assured-4.1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/rest-assured-4.1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/rest-assured-common-4.1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/rest-assured-common-4.1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/xml-path-4.1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/docs/xml-path-4.1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/activation-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/groovy-2.5.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/groovy-json-2.5.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/groovy-xml-2.5.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/hamcrest-2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/jaxb-osgi-2.3.0.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/org.apache.sling.javax.activation-0.1.0.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Documents/Work/automation file/untitled folder/rest-assured-4.1.2-dist/rest-assured-4.1.2-deps/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/Users/mimishra/Downloads/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
