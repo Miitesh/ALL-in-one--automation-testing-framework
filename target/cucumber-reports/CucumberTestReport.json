@@ -3,84 +3,16 @@
     "comments": [
       {
         "line": 1,
-        "value": "#Author: your.email@your.domain.com"
-      },
-      {
-        "line": 2,
-        "value": "#Keywords Summary :"
-      },
-      {
-        "line": 3,
-        "value": "#Feature: List of scenarios."
-      },
-      {
-        "line": 4,
-        "value": "#Scenario: Business rule through list of steps with arguments."
-      },
-      {
-        "line": 5,
-        "value": "#Given: Some precondition step"
-      },
-      {
-        "line": 6,
-        "value": "#When: Some key actions"
-      },
-      {
-        "line": 7,
-        "value": "#Then: To observe outcomes or validation"
-      },
-      {
-        "line": 8,
-        "value": "#And,But: To enumerate more Given,When,Then steps"
-      },
-      {
-        "line": 9,
-        "value": "#Scenario Outline: List of steps for data-driven as an Examples and \u003cplaceholder\u003e"
-      },
-      {
-        "line": 10,
-        "value": "#Examples: Container for s table"
-      },
-      {
-        "line": 11,
-        "value": "#Background: List of steps run before each of the scenarios"
-      },
-      {
-        "line": 12,
-        "value": "#\"\"\" (Doc Strings)"
-      },
-      {
-        "line": 13,
-        "value": "#| (Data Tables)"
-      },
-      {
-        "line": 14,
-        "value": "#@ (Tags/Labels):To group Scenarios"
-      },
-      {
-        "line": 15,
-        "value": "#\u003c\u003e (placeholder)"
-      },
-      {
-        "line": 16,
-        "value": "#\"\""
-      },
-      {
-        "line": 17,
-        "value": "## (Comments)"
-      },
-      {
-        "line": 18,
-        "value": "#Sample Feature Definition Template"
+        "value": "#Author: Mitesh Mishra"
       }
     ],
-    "line": 20,
+    "line": 3,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 4355490,
+              "duration": 6870344,
               "status": "passed"
             },
             "match": {
@@ -88,14 +20,14 @@
             }
           }
         ],
-        "line": 23,
-        "name": "to verify Fromaddress in email generated from case update to customer.",
+        "line": 5,
+        "name": "caseflow_001: find the time taken to search flights",
         "description": "",
-        "id": "this-feature-file-is-to-test-all-email-related-scenarios;to-verify-fromaddress-in-email-generated-from-case-update-to-customer.",
+        "id": "to-verify-the-case-flow-in-sfdc;caseflow-001:-find-the-time-taken-to-search-flights",
         "after": [
           {
             "result": {
-              "duration": 18973,
+              "duration": 114271,
               "status": "passed"
             },
             "match": {
@@ -107,167 +39,76 @@
         "keyword": "Scenario",
         "steps": [
           {
+            "output": [
+              "Time Taken to open website",
+              "\n",
+              "6"
+            ],
             "result": {
-              "duration": 38417462678,
+              "duration": 8733827295,
               "status": "passed"
             },
-            "line": 24,
-            "name": "User has a valid SFDC credential",
+            "line": 6,
+            "name": "user has a valid URL and is on Mercury Tours\u0027 homepage",
             "match": {
-              "location": "EmailTest.user_has_a_valid_SFDC_credential(DataTable)"
+              "location": "PerformanceTest.user_has_a_valid_URL_and_is_on_Mercury_Tours_homepage(DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Username",
-                  "Password"
+                  "URL"
                 ],
-                "line": 25
+                "line": 7
               },
               {
                 "cells": [
-                  "rhn-support-kmashalk",
-                  "redhat"
+                  "http://demo.guru99.com/test/newtours/index.php"
                 ],
-                "line": 26
+                "line": 8
               }
             ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 70293640012,
+              "duration": 1514484374,
               "status": "passed"
             },
-            "line": 27,
-            "name": "User perform action on case such as case comment",
+            "line": 9,
+            "name": "user goes to flight section and enter flight details to hit search",
             "match": {
-              "location": "EmailTest.user_perform_action_on_case_such_as_case_comment(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "CaseNumber"
-                ],
-                "line": 28
-              },
-              {
-                "cells": [
-                  "02470917"
-                ],
-                "line": 29
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3035401496,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Verify the from address in email which the customer receive",
-            "match": {
-              "location": "EmailTest.verify_the_from_address_in_email_which_the_customer_receive(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "support.pilot@redhat.com"
-                ],
-                "line": 31
-              }
-            ],
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1234305,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.getScenario(Scenario)"
-            }
-          }
-        ],
-        "line": 33,
-        "name": "to verify Fromaddress in email sent to customer when case is closed",
-        "description": "",
-        "id": "this-feature-file-is-to-test-all-email-related-scenarios;to-verify-fromaddress-in-email-sent-to-customer-when-case-is-closed",
-        "after": [
-          {
-            "result": {
-              "duration": 16036,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.AfterSteps()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3058624333,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User is on the same case page",
-            "match": {
-              "location": "EmailTest.user_is_on_case_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4512374762,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "User closes the case",
-            "match": {
-              "location": "EmailTest.user_closes_the_case()"
+              "location": "PerformanceTest.user_goes_to_flight_section_and_enter_flight_details_to_hit_search()"
             },
             "keyword": "When "
           },
           {
+            "output": [
+              "Time Taken to go to Flight section",
+              "1"
+            ],
             "result": {
-              "duration": 1361261415,
+              "duration": 110121639,
               "status": "passed"
             },
-            "line": 36,
-            "name": "Verify that from address in email which the customer receive on case closure",
+            "line": 10,
+            "name": "Print the time taken to perform search",
             "match": {
-              "location": "EmailTest.verify_the_from_address_in_survey_email_which_the_customer_receive(DataTable)"
+              "location": "PerformanceTest.print_the_time_taken_to_perform_search()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "support.pilot@redhat.com"
-                ],
-                "line": 37
-              }
-            ],
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "This feature file is to test all email related scenarios",
+    "name": "To verify the case flow in SFDC",
     "description": "",
-    "id": "this-feature-file-is-to-test-all-email-related-scenarios",
+    "id": "to-verify-the-case-flow-in-sfdc",
     "keyword": "Feature",
-    "uri": "EmailTest.feature",
+    "uri": "PerformanceTest.feature",
     "tags": [
       {
-        "line": 19,
-        "name": "@tag1"
+        "line": 2,
+        "name": "@PerTest"
       }
     ]
   }

@@ -9,7 +9,22 @@
 
   <name>api-testing</name>
   <url>http://maven.apache.org</url>
-
+  <build>
+	<plugins>
+		<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M5</version>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.maven.surefire</groupId>
+        <artifactId>surefire-junit47</artifactId>
+        <version>3.0.0-M5</version>
+      </dependency>
+    </dependencies>
+  </plugin>
+	</plugins>
+</build>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -79,7 +94,7 @@
 <dependency>
 				<groupId>org.seleniumhq.selenium</groupId>
 				<artifactId>selenium-java</artifactId>
-				<version>3.1.0</version>
+				<version>3.14.0</version>
 			</dependency>
 			
 			<dependency>
@@ -94,16 +109,7 @@
     <version>23.0</version>
 </dependency>
 
-<dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>logging-interceptor</artifactId>
-            <version>4.6.0</version>
-        </dependency>
+
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -114,6 +120,7 @@
             <artifactId>gson-fire</artifactId>
             <version>1.8.3</version>
         </dependency>
+
 <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
     <groupId>io.rest-assured</groupId>
@@ -121,5 +128,18 @@
     <version>4.1.2</version>
     <scope>test</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.rest-assured/xml-path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>xml-path</artifactId>
+    <version>4.1.2</version>
+</dependency>
+
   </dependencies>
 </project>

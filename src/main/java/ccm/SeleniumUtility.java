@@ -8,10 +8,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openqa.selenium.By;
 
 public class SeleniumUtility extends TestBase {
 	
@@ -118,6 +118,20 @@ public class SeleniumUtility extends TestBase {
 	{
 		//handle = (List<String>) driver.getWindowHandles();
 		driver.switchTo().frame(framename);
+		
+	}
+	public void linkInNewTab(String element) {
+		
+		WebElement ele=getElement(element);
+		Actions rightClickAction = new Actions(driver).moveToElement(ele).keyDown(Keys.COMMAND)
+	            .click(ele)
+	            .keyUp(Keys.COMMAND);
+		
+		rightClickAction.build().perform();
+		ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+		//WebElement elementOpen=driver.findElement(By.linkText("Open"));
+		//elementOpen.click();
 		
 	}
 	public void moveToElement(String element)

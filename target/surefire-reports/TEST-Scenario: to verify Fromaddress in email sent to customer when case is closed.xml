@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Scenario: to verify Fromaddress in email sent to customer when case is closed" time="233.283" tests="8" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="/Users/mimishra/Downloads/chromedriver 3"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/test-classes:/Users/mimishra/eclipse-workspace/api-testing/target/classes:/Users/mimishra/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mimishra/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar:/Users/mimishra/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/mimishra/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/mimishra/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-java/1.2.6/cucumber-java-1.2.6.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-core/1.2.6/cucumber-core-1.2.6.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/mimishra/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/mimishra/.m2/repository/com/github/mailslurp/mailslurp-client-java/7.0.11-RELEASE/mailslurp-client-java-7.0.11-RELEASE.jar:/Users/mimishra/.m2/repository/io/swagger/swagger-annotations/1.5.22/swagger-annotations-1.5.22.jar:/Users/mimishra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.14.2/logging-interceptor-3.14.2.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/mimishra/.m2/repository/org/threeten/threetenbp/1.4.0/threetenbp-1.4.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/mimishra/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mimishra/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mimishra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/mimishra/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/mimishra/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/Users/mimishra/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/mimishra/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/mimishra/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/mimishra/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/mimishra/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mimishra/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mimishra/.m2/repository/com/google/code/gson/gson/2.8.3/gson-2.8.3.jar:/Users/mimishra/.m2/repository/io/gsonfire/gson-fire/1.8.3/gson-fire-1.8.3.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.8/groovy-xml-2.5.8.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mimishra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mimishra/.m2/repository/io/rest-assured/json-path/4.1.2/json-path-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-json/2.5.8/groovy-json-2.5.8.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured-common/4.1.2/rest-assured-common-4.1.2.jar:/Users/mimishra/.m2/repository/io/rest-assured/xml-path/4.1.2/xml-path-4.1.2.jar:/Users/mimishra/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mimishra/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mimishra/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/mimishra/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/mimishra/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/mimishra/eclipse-workspace/api-testing/target/surefire/surefirebooter7136408591772797080.jar /Users/mimishra/eclipse-workspace/api-testing/target/surefire 2020-07-07T21-35-27_333-jvmRun1 surefire281258097793969614tmp surefire_03474107986195603002tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/test-classes:/Users/mimishra/eclipse-workspace/api-testing/target/classes:/Users/mimishra/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mimishra/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar:/Users/mimishra/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/mimishra/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/mimishra/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-java/1.2.6/cucumber-java-1.2.6.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-core/1.2.6/cucumber-core-1.2.6.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/mimishra/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/mimishra/.m2/repository/com/github/mailslurp/mailslurp-client-java/7.0.11-RELEASE/mailslurp-client-java-7.0.11-RELEASE.jar:/Users/mimishra/.m2/repository/io/swagger/swagger-annotations/1.5.22/swagger-annotations-1.5.22.jar:/Users/mimishra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.14.2/logging-interceptor-3.14.2.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/mimishra/.m2/repository/org/threeten/threetenbp/1.4.0/threetenbp-1.4.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/mimishra/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mimishra/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mimishra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/mimishra/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/mimishra/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/Users/mimishra/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/mimishra/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/mimishra/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/mimishra/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/mimishra/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mimishra/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mimishra/.m2/repository/com/google/code/gson/gson/2.8.3/gson-2.8.3.jar:/Users/mimishra/.m2/repository/io/gsonfire/gson-fire/1.8.3/gson-fire-1.8.3.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.8/groovy-xml-2.5.8.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mimishra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mimishra/.m2/repository/io/rest-assured/json-path/4.1.2/json-path-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-json/2.5.8/groovy-json-2.5.8.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured-common/4.1.2/rest-assured-common-4.1.2.jar:/Users/mimishra/.m2/repository/io/rest-assured/xml-path/4.1.2/xml-path-4.1.2.jar:/Users/mimishra/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mimishra/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mimishra/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/mimishra/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/mimishra/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mimishra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/mimishra/eclipse-workspace/api-testing"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/surefire/surefirebooter7136408591772797080.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="mimishra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/mimishra/.m2/repository"/>
+    <property name="cucumber.options" value="--tags @EmailTest"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/my/jgql5wcd23jbbmnf0v_f_8hh0000gn/T/"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="/Users/mimishra/eclipse-workspace/api-testing"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/mimishra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="/Users/mimishra/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Given User has a valid SFDC credential" classname="Scenario: to verify Fromaddress in email generated from case update to customer." time="0.001">
+    <system-out><![CDATA[#Author: Mitesh Mishra
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+@EmailTest
+Feature: This feature file is to test all email related scenarios
+https://gss--qa.my.salesforce.com/home/home.jsp
+00D2i0000000Ml4!AQIAQIr7GRuv93YMnpwwhErk3KZQ4uIcLjtllX4zFF.HaZVbkcIvLofwTfxMTD5NDWEgPAwQSSFQ39nRmmtKAz7XgzOkzpOj
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 46040
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Jul 07, 2020 9:35:30 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="When User perform action on case such as case comment" classname="Scenario: to verify Fromaddress in email generated from case update to customer." time="0">
+    <system-out><![CDATA[0.00
+]]></system-out>
+  </testcase>
+  <testcase name="Then Verify the from address in email which the customer receive" classname="Scenario: to verify Fromaddress in email generated from case update to customer." time="0">
+    <system-out><![CDATA[776de37f-8a5e-4cb1-8081-c7d56389e0c6@mailslurp.com
+776de37f-8a5e-4cb1-8081-c7d56389e0c6
+class Inbox {
+    createdAt: 2020-06-25T17:09:43.158Z
+    description: null
+    emailAddress: 776de37f-8a5e-4cb1-8081-c7d56389e0c6@mailslurp.com
+    expiresAt: 2020-06-25T18:09:43.157Z
+    favourite: false
+    id: 776de37f-8a5e-4cb1-8081-c7d56389e0c6
+    name: EmailBox
+    tags: null
+    userId: eaf33dff-6d68-4cb6-80f3-a814b55b49f3
+}
+Sandbox: (WoRH) (SEV 4) Case #02470917 (This case is test of automation) ref:_00D2iMl4._5002i34NPS:ref
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Scenario: to verify Fromaddress in email generated from case update to customer." time="0"/>
+  <testcase name="Given User is on the same case page" classname="Scenario: to verify Fromaddress in email sent to customer when case is closed" time="0">
+    <system-out><![CDATA[
+  Scenario: to verify Fromaddress in email generated from case update to customer. &amp#27;[90m# EmailTest.feature:23&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser has a valid SFDC credential&amp#27;[0m                                         &amp#27;[90m# EmailTest.user_has_a_valid_SFDC_credential(DataTable)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser perform action on case such as case comment&amp#27;[0m                          &amp#27;[90m# EmailTest.user_perform_action_on_case_such_as_case_comment(DataTable)&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mVerify the from address in email which the customer receive&amp#27;[0m               &amp#27;[90m# EmailTest.verify_the_from_address_in_email_which_the_customer_receive(DataTable)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="When User closes the case" classname="Scenario: to verify Fromaddress in email sent to customer when case is closed" time="0"/>
+  <testcase name="Then Verify that from address in email which the customer receive on case closure" classname="Scenario: to verify Fromaddress in email sent to customer when case is closed" time="0">
+    <system-out><![CDATA[776de37f-8a5e-4cb1-8081-c7d56389e0c6@mailslurp.com
+776de37f-8a5e-4cb1-8081-c7d56389e0c6
+class Inbox {
+    createdAt: 2020-06-25T17:09:43.158Z
+    description: null
+    emailAddress: 776de37f-8a5e-4cb1-8081-c7d56389e0c6@mailslurp.com
+    expiresAt: 2020-06-25T18:09:43.157Z
+    favourite: false
+    id: 776de37f-8a5e-4cb1-8081-c7d56389e0c6
+    name: EmailBox
+    tags: null
+    userId: eaf33dff-6d68-4cb6-80f3-a814b55b49f3
+}
+Sandbox: (WoRH) (SEV 4) Case #02468235 (This case is test of automation) ref:_00D2iMl4._5002i3367U:ref
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Scenario: to verify Fromaddress in email sent to customer when case is closed" time="0"/>
+</testsuite>

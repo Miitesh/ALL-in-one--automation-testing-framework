@@ -64,17 +64,15 @@ public class RESTAPI {
 	}
 	public void setRequestBody() throws IOException
 	{
-		//this.reqBody=new JSONObject();
-		//this.reqBody.put(key,value);
+		
 		reqBody=generateStringFromResource(filename);
 	}
 	public void submit() throws IOException
 	{
 		
-		//reqBody=generateStringFromResource(filename); charset=utf-8
+		
 		setHeader("Content-Type","application/json; charset=utf-8");
-		//headermap.put("SOAPAction", SOAPAction);
-		//headermap.put("Accept", "application/xml");
+		
 		System.out.println(reqBody);
 		System.out.println(requestType);
 		if(requestType.equalsIgnoreCase("POST"))
@@ -90,14 +88,13 @@ public class RESTAPI {
 		{
 			response = given().log().all().headers(headermap).body(reqBody).when().patch(url).thenReturn();
 		}
-//		 xml = response.getBody().asString();
-//		 xmlPath = new XmlPath(xml).using(XmlPathConfig.xmlPathConfig().namespaceAware(false)).setRootPath("soapenv:Envelope.soapenv:Body.createCaseResponse.result.");
-	    responseBody=response.getBody().asString();
+		
+       responseBody=response.getBody().asString();
 
 		
 	}
-	public void getResponse()
+	public String getResponse()
 	{
-		System.out.println(responseBody);
+		return responseBody;
 	}
 }

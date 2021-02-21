@@ -19,7 +19,7 @@ public class EmailTestingWrapper {
 public static Inbox inbox;
 public static Email email;
 public static String emailAddress;
-public static final Long TIMEOUT_MILLIS = 30000L;
+public static final Long TIMEOUT_MILLIS = 60000L;
 public static InboxControllerApi apiInstance;
 public static UUID inboxId;
 public static ApiClient defaultClient;

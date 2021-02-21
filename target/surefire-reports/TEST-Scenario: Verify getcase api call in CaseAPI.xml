@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Scenario: Verify getcase api call in CaseAPI" time="6.517" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/test-classes:/Users/mimishra/eclipse-workspace/api-testing/target/classes:/Users/mimishra/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mimishra/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar:/Users/mimishra/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/mimishra/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/mimishra/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-java/1.2.6/cucumber-java-1.2.6.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-core/1.2.6/cucumber-core-1.2.6.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/mimishra/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/mimishra/.m2/repository/com/github/mailslurp/mailslurp-client-java/7.0.11-RELEASE/mailslurp-client-java-7.0.11-RELEASE.jar:/Users/mimishra/.m2/repository/io/swagger/swagger-annotations/1.5.22/swagger-annotations-1.5.22.jar:/Users/mimishra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.14.2/logging-interceptor-3.14.2.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/mimishra/.m2/repository/org/threeten/threetenbp/1.4.0/threetenbp-1.4.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/mimishra/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mimishra/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mimishra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/mimishra/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/mimishra/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/Users/mimishra/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/mimishra/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/mimishra/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/mimishra/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/mimishra/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mimishra/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mimishra/.m2/repository/com/google/code/gson/gson/2.8.3/gson-2.8.3.jar:/Users/mimishra/.m2/repository/io/gsonfire/gson-fire/1.8.3/gson-fire-1.8.3.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.8/groovy-xml-2.5.8.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mimishra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mimishra/.m2/repository/io/rest-assured/json-path/4.1.2/json-path-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-json/2.5.8/groovy-json-2.5.8.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured-common/4.1.2/rest-assured-common-4.1.2.jar:/Users/mimishra/.m2/repository/io/rest-assured/xml-path/4.1.2/xml-path-4.1.2.jar:/Users/mimishra/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mimishra/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mimishra/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/mimishra/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/mimishra/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/mimishra/eclipse-workspace/api-testing/target/surefire/surefirebooter556036559439623935.jar /Users/mimishra/eclipse-workspace/api-testing/target/surefire 2020-06-29T19-08-18_587-jvmRun1 surefire2033507868566855945tmp surefire_09133285180575918994tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/test-classes:/Users/mimishra/eclipse-workspace/api-testing/target/classes:/Users/mimishra/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/mimishra/.m2/repository/org/testng/testng/6.8.7/testng-6.8.7.jar:/Users/mimishra/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/mimishra/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/mimishra/.m2/repository/org/yaml/snakeyaml/1.12/snakeyaml-1.12.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-junit/1.2.5/cucumber-junit-1.2.5.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-java/1.2.6/cucumber-java-1.2.6.jar:/Users/mimishra/.m2/repository/io/cucumber/cucumber-core/1.2.6/cucumber-core-1.2.6.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar:/Users/mimishra/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar:/Users/mimishra/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar:/Users/mimishra/.m2/repository/com/github/mailslurp/mailslurp-client-java/7.0.11-RELEASE/mailslurp-client-java-7.0.11-RELEASE.jar:/Users/mimishra/.m2/repository/io/swagger/swagger-annotations/1.5.22/swagger-annotations-1.5.22.jar:/Users/mimishra/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/okhttp/3.14.2/okhttp-3.14.2.jar:/Users/mimishra/.m2/repository/com/squareup/okhttp3/logging-interceptor/3.14.2/logging-interceptor-3.14.2.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/Users/mimishra/.m2/repository/org/threeten/threetenbp/1.4.0/threetenbp-1.4.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/mimishra/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/mimishra/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/mimishra/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/mimishra/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/mimishra/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpclient/4.5.5/httpclient-4.5.5.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/mimishra/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/mimishra/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/Users/mimishra/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/Users/mimishra/.m2/repository/org/json/json/20160212/json-20160212.jar:/Users/mimishra/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/mimishra/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/mimishra/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/mimishra/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/mimishra/.m2/repository/com/google/code/gson/gson/2.8.3/gson-2.8.3.jar:/Users/mimishra/.m2/repository/io/gsonfire/gson-fire/1.8.3/gson-fire-1.8.3.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured/4.1.2/rest-assured-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy/2.5.8/groovy-2.5.8.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.8/groovy-xml-2.5.8.jar:/Users/mimishra/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/mimishra/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/mimishra/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/mimishra/.m2/repository/io/rest-assured/json-path/4.1.2/json-path-4.1.2.jar:/Users/mimishra/.m2/repository/org/codehaus/groovy/groovy-json/2.5.8/groovy-json-2.5.8.jar:/Users/mimishra/.m2/repository/io/rest-assured/rest-assured-common/4.1.2/rest-assured-common-4.1.2.jar:/Users/mimishra/.m2/repository/io/rest-assured/xml-path/4.1.2/xml-path-4.1.2.jar:/Users/mimishra/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mimishra/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mimishra/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar:/Users/mimishra/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/mimishra/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/mimishra"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/mimishra/eclipse-workspace/api-testing"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/mimishra/eclipse-workspace/api-testing/target/surefire/surefirebooter556036559439623935.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_221-b11"/>
+    <property name="user.name" value="mimishra"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/mimishra/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/my/jgql5wcd23jbbmnf0v_f_8hh0000gn/T/"/>
+    <property name="java.version" value="1.8.0_221"/>
+    <property name="user.dir" value="/Users/mimishra/eclipse-workspace/api-testing"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/mimishra/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.221-b11"/>
+    <property name="java.ext.dirs" value="/Users/mimishra/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="Given User has valid API url and request details" classname="Scenario: to verify the response of Rest API" time="0">
+    <system-out><![CDATA[#Author: Mitesh Mishra
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+@APITest
+Feature: Test Rest API
+RequestBody
+]]></system-out>
+  </testcase>
+  <testcase name="When User send request to GlobalCustomerName API" classname="Scenario: to verify the response of Rest API" time="0">
+    <system-out><![CDATA[{
+"1167607": [
+{ "fieldName": "globalCustomerName", "value": "BAE SYSTEMS PLC Editted" }
+]
+}
+PATCH
+Request method:	PATCH
+Request URI:	https://cs37.salesforce.com/services/apexrest/v1/accounts
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 00D2i0000000Ml4!AQIAQAmoxLslVY_o6DUH4X76qJ19lqtFWRQWfGC9HK2paRiFS3yyq7EZrjuXcsPbzpsTo7mGdAujjBuZkGQsoh1VtHFO4dSJ
+				On-Behalf-Of=rhn-support-cyeshi
+				Accept=*/*
+				Content-Type=application/json; charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "1167607": [
+        {
+            "fieldName": "globalCustomerName",
+            "value": "BAE SYSTEMS PLC Editted"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="Then Verify the response status code is 200 Ok" classname="Scenario: to verify the response of Rest API" time="0">
+    <system-out><![CDATA[&amp#27;[34mStatusCode 200 OK&amp#27;[0m
+&amp#27;[34m{"success":["1167607"],"failure":[]}&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Scenario: to verify the response of Rest API" time="0"/>
+  <testcase name="Given User have valid end point for API" classname="Scenario: Verify getcase api call in CaseAPI" time="0">
+    <system-out><![CDATA[
+  Scenario: to verify the response of Rest API       &amp#27;[90m# TestRestApi.feature:15&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser has valid API url and request details&amp#27;[0m &amp#27;[90m# RestTest.user_has_valid_API_url_and_request_details(DataTable)&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser send request to GlobalCustomerName API&amp#27;[0m &amp#27;[90m# RestTest.user_send_request_to_GlobalCustomerName_API()&amp#27;[0m
+    &amp#27;[32mThen &amp#27;[0m&amp#27;[32mVerify the response status code is &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m&amp#27;[32m Ok&amp#27;[0m   &amp#27;[90m# RestTest.verify_the_response_status_code_is_Ok(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="When User makes a call to API with following parameter" classname="Scenario: Verify getcase api call in CaseAPI" time="0">
+    <system-out><![CDATA[2
+ssoName
+[api:ssoName: null]
+[api:ssoName: null]
+api:ssoName
+rhn-support-kmashalk
+rhn-support-kmashalk
+caseNum
+[api:caseNum: null]
+[api:caseNum: null]
+api:caseNum
+02470917
+02470917
+XML file updated successfully
+Request method:	POST
+Request URI:	https://cs37.salesforce.com/services/Soap/class/CaseAPI
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		SOAPAction=""http://soap.sforce.com/schemas/class/CaseAPI/CaseAPIPortType/getCaseRequest"";
+				Accept=application/xml
+				Content-Type=text/XML; charset=utf-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+<soapenv:Envelope xmlns:api="http://soap.sforce.com/schemas/class/APIUtils" xmlns:cas="http://soap.sforce.com/schemas/class/CaseAPI" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <cas:SessionHeader>
+      <cas:sessionId>00D2i0000000Ml4!AQIAQAmoxLslVY_o6DUH4X76qJ19lqtFWRQWfGC9HK2paRiFS3yyq7EZrjuXcsPbzpsTo7mGdAujjBuZkGQsoh1VtHFO4dSJ</cas:sessionId>
+    </cas:SessionHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <cas:getCase>
+      <cas:cContext>
+        <api:ssoName>rhn-support-kmashalk</api:ssoName>
+      </cas:cContext>
+      <cas:caseContext>
+        <api:caseNum>02470917</api:caseNum>
+      </cas:caseContext>
+    </cas:getCase>
+  </soapenv:Body>
+</soapenv:Envelope>
+]]></system-out>
+  </testcase>
+  <testcase name="Then verify status code is 200 OK" classname="Scenario: Verify getcase api call in CaseAPI" time="0">
+    <system-out><![CDATA[&amp#27;[34mStatusCode 200 OK&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="And verify fields in response body" classname="Scenario: Verify getcase api call in CaseAPI" time="0">
+    <system-out><![CDATA[APICase:caseNumber
+APICase:caseNumber
+02470917
+APICase:caseNumber
+APICase:caseNumber
+02470917
+&amp#27;[34m02470917&amp#27;[0m
+APICase:accountNumber
+APICase:accountNumber
+1460290
+APICase:accountNumber
+APICase:accountNumber
+1460290
+&amp#27;[34m1460290&amp#27;[0m
+APICase:product
+APICase:product
+OpenShift Container Platform
+APICase:product
+APICase:product
+OpenShift Container Platform
+&amp#27;[34mOpenShift Container Platform&amp#27;[0m
+APICase:version
+APICase:version
+3.10
+APICase:version
+APICase:version
+3.10
+&amp#27;[34m3.10&amp#27;[0m
+APICase:status
+APICase:status
+Waiting on Red Hat
+APICase:status
+APICase:status
+Waiting on Red Hat
+&amp#27;[34mWaiting on Red Hat&amp#27;[0m
+APICase:owner
+APICase:owner
+Kumar Mashalkar
+APICase:owner
+APICase:owner
+Kumar Mashalkar
+&amp#27;[34mKumar Mashalkar&amp#27;[0m
+APICase:origin
+APICase:origin
+Phone
+APICase:origin
+APICase:origin
+Phone
+&amp#27;[34mPhone&amp#27;[0m
+APICase:contactName
+APICase:contactName
+David Tse
+APICase:contactName
+APICase:contactName
+David Tse
+&amp#27;[34mDavid Tse&amp#27;[0m
+APICase:description
+APICase:description
+Test for automation
+APICase:description
+APICase:description
+Test for automation
+&amp#27;[34mTest for automation&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="" classname="Scenario: Verify getcase api call in CaseAPI" time="0"/>
+</testsuite>

@@ -110,7 +110,7 @@ public class SOAPTest {
 	            Node node = attributes.item(i);
 	            if (node.getNodeType() == Node.ATTRIBUTE_NODE)
 	            {
-	                String name = node.getLocalName();//.getPrefix();
+	                String name = node.getLocalName();
 	                System.out.println(name + " " + node.getNamespaceURI());
 	            }
 	        }
@@ -130,22 +130,19 @@ public class SOAPTest {
             dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(xmlFile);
             NodeList root;// = doc.getDocumentElement();
-            //prints root name space
-            //printAttributesInfo((Node) root);
+            
             
             XPath xPath = XPathFactory.newInstance().newXPath();
-            //xPath.setNamespaceContext(new UniversalNamespaceResolver(doc));
+           
             
-            sid = (Node) xPath.evaluate("//*[local-name()='sessionId']",doc, XPathConstants.NODE);
-            sid.setTextContent(sessionId);// set session id for api request
-            System.out.println(sid.getNodeName());
-            System.out.println(sid.getTextContent());
+           // sid = (Node) xPath.evaluate("//*[local-name()='sessionId']",doc, XPathConstants.NODE);
+           // sid.setTextContent(sessionId);// set session id for api request
+            
             Node pnode=null;
             for(int i=0;i<len;i++)
             {
             	System.out.println(data.get(0).get(i));
             	NodeList node = (NodeList) xPath.evaluate("//*[local-name()='"+data.get(0).get(i)+"']",doc, XPathConstants.NODESET);
-            	//root = (NodeList) xPath.evaluate("//*[local-name()='"+data.get(0).get(i)+"']",doc, XPathConstants.NODESET);
             	System.out.println(node.item(0));
             	if(node.getLength()>1)
             	{
@@ -232,19 +229,19 @@ public class SOAPTest {
 	{
 		
 		reqBody=generateStringFromResource(filename);
-		setHeader("Content-Type","text/XML; charset=utf-8");
+		setHeader("Content-Type","text/xml; charset=utf-8");
+		//setHeader("Content-Type","application/XML");
+		//setHeader("Content-encoding","gzip");
 		headermap.put("SOAPAction", SOAPAction);
-		headermap.put("Accept", "application/xml");
+		//headermap.put("Accept", "application/xml");
 		
 		if(requestType == "POST")
-			response =  given().log().all().headers(headermap).body(reqBody).when().post(url).thenReturn();
+			response =  given().log().all().headers(headermap). redirects().follow(false).body(reqBody).when().post(url).thenReturn();
 		else if(requestType == "GET")
 		{
 			response = given().log().all().headers(headermap).body(reqBody).when().get(url).thenReturn();
 		}
-//		 xml = response.getBody().asString();
-//		 xmlPath = new XmlPath(xml).using(XmlPathConfig.xmlPathConfig().namespaceAware(false)).setRootPath("soapenv:Envelope.soapenv:Body.createCaseResponse.result.");
-	    responseBody=response.getBody().asString();
+        responseBody=response.getBody().asString();
 
 		
 	}
@@ -272,10 +269,10 @@ public class SOAPTest {
 	        StreamResult console = new StreamResult(System.out);
 	        transformer.transform(source, console);
 		} catch (TransformerConfigurationException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} catch (TransformerFactoryConfigurationError e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
         
@@ -285,7 +282,7 @@ public class SOAPTest {
 	public List<List<String>> responseList(String fieldname, Document doc) throws IOException
 	{
 		List<List<String>> list1=new ArrayList<List<String>>();
-		//List<String> list2;
+		
 		 try {
 	            
 	            XPath xPath = XPathFactory.newInstance().newXPath();
@@ -314,13 +311,9 @@ public class SOAPTest {
 	            				
 	            				if(!(childnode.item(j).getTextContent().isEmpty()))
 	            				{
-	            					//System.out.print(childnode.item(j).getNodeName()+" ");
+	            					
 	            					list2.add(childnode.item(j).getNodeName()+" "+childnode.item(j).getTextContent());
-	            					//System.out.print(Storage.getScenario().getName());
-	            					//Storage.getScenario().write(childnode.item(j).getNodeName()+" ");
-	            					//System.out.println(childnode.item(j).getTextContent());
-	            					//Storage.getScenario().write(childnode.item(j).getTextContent());
-	            					//System.out.println(list2.get(k));
+	            					
 	            					k++;
 	            				}
 	            				
@@ -339,20 +332,15 @@ public class SOAPTest {
 	}
 	public String responseDetail(String fieldname, Document doc) throws IOException
 	{
-		  //xml =response.getBody().asString();
-		  //System.out.println(xml);
+		
 	       
 	       
 	        Node node=null;
 	        try {
 	            
-//	            Document doc = toXmlDocument(xml);
-//	            Element root = doc.getDocumentElement();
+
 	            XPath xPath = XPathFactory.newInstance().newXPath();
-//	            for(int i=0;i<len;i++)
-//	            {
-	            	System.out.println(response.getBody().asString());
-	            	System.out.println(doc);
+
 	            	 node = (Node) xPath.evaluate("//*[local-name()='"+fieldname+"']",doc, XPathConstants.NODE);
 	            	 
 	            	 System.out.println(node.getNodeName());
@@ -369,40 +357,14 @@ public class SOAPTest {
 	                	System.out.println(node.getNodeName());
 		                System.out.println(node.getTextContent());
 	                }
-	            	 //node.setTextContent(data.get(1).get(i));
-	               // System.out.println(node.getTextContent());
-	            
-	            //node.getTextContent();//.setTextContent(sessionId);// set session id for api request
-//	        } catch (SAXException e1) {
-//	            e1.printStackTrace();
-//	        }
-//	          catch(ParserConfigurationException e1) {
-//	        	  e1.printStackTrace();
-//	          }
-//	         
-//	          catch(IOException e1) {
-//	        	  e1.printStackTrace();
+	            	 
 	          } catch (XPathExpressionException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	        return node.getTextContent();
 	        
-		 /* XPath xPath = XPathFactory.newInstance().newXPath();
-		 xmlPath = new XmlPath(xml).using(XmlPathConfig.xmlPathConfig().namespaceAware(false)).setRootPath("soapenv:Envelope.soapenv:Body.createCaseResponse.result.");
-	    
-		System.out.println();
-		System.out.println("API Status Code:"+response.getStatusCode());
-		System.out.println("Account Number: "+xmlPath.getNode( xPath.evaluate("//*[local-name()='"+data.get(0).get(i)+"']",doc, XPathConstants.NODE)).getString("APICase:accountNumber"));     
-		System.out.println("New Case Number: "+xmlPath.getString("APICase:caseNumber"));
-		CaseNumber=xmlPath.getString("APICase:caseNumber") ;
-		System.out.println("Product: "+xmlPath.getString("APICase:product"));
-		System.out.println("version: "+xmlPath.getString("APICase:version"));
-		System.out.println("status: "+xmlPath.getString("APICase:status"));
-		System.out.println("owner: "+xmlPath.getString("APICase:owner"));
-		System.out.println("origin: "+xmlPath.getString("APICase:origin"));
-		System.out.println("contactName: "+xmlPath.getString("APICase:contactName"));
-		System.out.println("description: "+xmlPath.getString("APICase:description"));*/
+		 
 		
 		
 	}

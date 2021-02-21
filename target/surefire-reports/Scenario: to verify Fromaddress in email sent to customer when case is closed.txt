@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: to verify Fromaddress in email sent to customer when case is closed
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 233.283 s - in Scenario: to verify Fromaddress in email sent to customer when case is closed

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: to verify Fromaddress in email generated from case update to customer.
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 196.54 s <<< FAILURE! - in Scenario: to verify Fromaddress in email generated from case update to customer.
+Scenario: to verify Fromaddress in email generated from case update to customer..When User perform action on case such as case comment  Time elapsed: 0.006 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//table[@class='detailList commentEditor']/tbody/tr[8]/td[2]/div/textarea[@id='new_text']"}
+  (Session info: chrome=83.0.4103.116)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'miteshs-MacBook-Pro', ip: '2409:4064:218e:f308:c48c:b4a5:9f0c:18f6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/my/jgql5wcd23j...}, goog:chromeOptions: {debuggerAddress: localhost:60222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 4ba75c55c15b088412d4ec89d142570e
+*** Element info: {Using=xpath, value=//table[@class='detailList commentEditor']/tbody/tr[8]/td[2]/div/textarea[@id='new_text']}
+

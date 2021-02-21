@@ -15,6 +15,7 @@ import java.util.Properties;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.rules.TestName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.CapabilityType;
@@ -52,7 +53,7 @@ public class TestBase {
 	public  static Properties objctrepo = new Properties();
 	public static WebDriver driver ;
 	public static Local l;
-	
+	public TestName name = new TestName();
 
    // private static ApiClient mailslurpClient;	
 	public SOAPTest st = new SOAPTest();
@@ -90,6 +91,13 @@ public class TestBase {
 	 {
 		 return this.driver;
 	 }
+	 public void printTime (long time ) {
+		    
+		    String methodName= name.getMethodName() ;
+		    System.out.print("\n");
+		    System.out.println("TimeElasped"+ " :" + time);
+		}
+
 	 
 	 public void SetProperty(String key, String value)
 	 {
@@ -121,14 +129,14 @@ public class TestBase {
 	 public void createBrowser() throws Exception
 	 {
 		 
-		 System.setProperty("webdriver.chrome.driver","/Users/mimishra/Downloads/chromedriver 3");
+		 System.setProperty("webdriver.chrome.driver","/Users/mimishra/Downloads/chromedriver 4");//put your chormedriver path
 			
 		 driver = new ChromeDriver();
 		 setDriver(driver);
 		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		 su=new SeleniumUtility(driver);
-		/* String key="xs9bpjAy8qm13MVvKxYF";
-		 String Node1 = "https://nancyjain1:xs9bpjAy8qm13MVvKxYF@hub-cloud.browserstack.com/wd/hub";
+		/* String key="key";
+		 String Node1 = "https://username:key@hub-cloud.browserstack.com/wd/hub"; // node details for cloud based operation
 		    
 	      DesiredCapabilities cap1 = DesiredCapabilities.chrome();
 	      cap1.setCapability("browserstack.local", "true");
